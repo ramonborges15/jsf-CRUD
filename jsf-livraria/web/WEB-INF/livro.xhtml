@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    
+    <h:body>
+        <h1>Novo Livro</h1>
+        <h:form>
+            <fieldset>
+                <legend>Dados do Livro</legend>
+                <!-- panelGrid organizando os elementos na vertical com 2 colunas -->
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Título: " for="titulo"/>
+                    <h:inputText id="titulo" value="#{livroBean.titulo}"/>
+
+                    <h:outputLabel value="ISBN: " for="isbn"/>
+                    <h:inputText id="isbn" value="#{livroBean.isbn}"/>
+
+                    <h:outputLabel value="Preço: " for="preco"/>
+                    <h:inputText id="preco" value="#{livroBean.preco}"/>
+
+                    <h:outputLabel value="Data de Lançamento: " for="dataLancamento"/>
+                    <h:inputText id="dataLancamento" value="#{livroBean.dataLancamento}"/>
+
+                    <h:commandButton value="Gravar" action="#{livroBean.gravar}"/>
+                </h:panelGrid>
+            </fieldset>
+        </h:form>
+    </h:body>
+
+</html>
