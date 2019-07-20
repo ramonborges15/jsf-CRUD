@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <!--Template da página-->
+    <body>
+
+        <!--Barra superior-->
+        <div class="ui-g">
+            <ui:insert name="header"/>    
+        </div>
+
+        <!--Região central da página-->
+        <div class="ui-g">
+
+            <!--Menu lateral-->
+            <div class="ui-g-12 ui-md-2">
+                <ui:insert name="sidebar"/>
+            </div>
+
+            <!--Conteúdo da página-->
+            <div class="ui-g-12 ui-md-10 ui-g-nopad">
+                <ui:insert name="body"/>    
+            </div>
+        </div>
+
+        <!--Rodapé-->
+        <div class="ui-g">
+            <ui:insert name="footer"/>
+        </div>
+    </body>
+</html>
